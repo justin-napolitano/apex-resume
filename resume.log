@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2022.2.27)  29 MAR 2022 21:05
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2022.2.27)  29 MAR 2022 21:38
  restricted system commands enabled.
 **resume.tex
 (./resume.tex
@@ -1075,36 +1075,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--54
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--392
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 
  []
 
 
-Underfull \hbox (badness 3281) in paragraph at lines 392--392
-[]  []
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
+[][]  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--392
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--392
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--392
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 [][]  []  []
  []
 
 
 LaTeX Font Warning: Font shape `TU/FontAwesome(0)/m/it' undefined
-(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 392.
+(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 393.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--393
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
 
  []
 
@@ -1120,14 +1125,14 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33215 strings out of 477800
+ 33217 strings out of 477800
  195338,1373583 words of node,token memory allocated
  513 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 68 glue_spec,
  5 attribute_list, 2 write nodes
-   avail lists: 1:1,2:3931,3:3046,4:732,5:2134,6:246,7:16149,8:52,9:1674,10:4,11
-:1223
- 52875 multiletter control sequences out of 65536+600000
+   avail lists: 2:3735,3:2845,4:726,5:2118,6:245,7:15986,8:49,9:1614,10:4,11:122
+4
+ 52877 multiletter control sequences out of 65536+600000
  44 fonts using 10643967 bytes
  125i,15n,113p,10601b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/truetype/typoland/carlito/Carlito-Bold
@@ -1136,10 +1141,10 @@ arlito-Italic.ttf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/font
 awesome/FontAwesome.otf></usr/local/texlive/2021/texmf-dist/fonts/truetype/typol
 and/carlito/Carlito-Bold.ttf></usr/local/texlive/2021/texmf-dist/fonts/truetype/
 typoland/carlito/Carlito-Regular.ttf>
-Output written on resume.pdf (1 page, 550606 bytes).
+Output written on resume.pdf (1 page, 550458 bytes).
 
-PDF statistics: 68 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+PDF statistics: 67 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
