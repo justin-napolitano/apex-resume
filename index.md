@@ -3,41 +3,56 @@ slug: "github-apex-resume"
 title: "apex-resume"
 repo: "justin-napolitano/apex-resume"
 githubUrl: "https://github.com/justin-napolitano/apex-resume"
-generatedAt: "2025-11-23T08:13:51.621086Z"
+generatedAt: "2025-11-23T08:36:15.782326Z"
 source: "github-auto"
 ---
 
 
-# Building my own LaTeX Resume Template: my-resume
+# Technical Overview of apex-resume
 
-Hey there! I wanted to share a little project I've been working on called **my-resume** — a custom LaTeX template for creating resumes and CVs. If you've ever struggled with making your resume look just right or wanted a template that fits *your* style perfectly, this might resonate with you.
+This project is a LaTeX-based resume generator centered around a custom document class and automated build tooling. The primary motivation appears to be creating a maintainable, reproducible, and customizable resume format that can be built and deployed with minimal manual intervention.
 
-## Why I Built my-resume
+## Motivation and Problem
 
-When it comes to resumes, I’ve always found the existing templates either too rigid or overly complex. I love the clean, professional look of templates like AltaCV and AwesomeCV, but I wanted something that did exactly what *I* needed without extra bells and whistles. Plus, I wanted full control over the styling and layout without wrestling with tons of packages or code I didn’t understand.
+Resumes require frequent updates and formatting consistency. Using LaTeX provides precise control over layout and typography, but managing builds and dependencies can be cumbersome. This repository addresses these issues by encapsulating resume styling in a dedicated class file and automating the build process with Python and Make.
 
-That’s where **my-resume** came in. It’s a LaTeX class I wrote from scratch that gives me flexibility with page styles, highlight bars, headers, and more — all running on XeLaTeX to leverage modern font and graphics capabilities.
+## Project Composition
 
-## How It's Built
+### Custom LaTeX Class
 
-At the core is the `my-resume.cls` file, a custom LaTeX class that defines options like single-sided or double-sided layouts. It uses TikZ and tcolorbox for drawing highlight bars and styling elements, and it supports fontawesome and academicons for including icons easily.
+The `my-resume.cls` file defines a LaTeX class based on `scrartcl` from the KOMA-Script bundle. It provides options for single- or double-sided layouts, affecting the positioning of highlight bars. The class loads necessary packages such as TikZ for graphics, tcolorbox for enhanced boxes, and icon fonts like FontAwesome and Academicons. This setup allows for rich visual elements and consistent styling across the resume.
 
-The main resume content lives in `resume.tex`, which loads this class and fills in the sections. I also included a `python-build.py` script that automates building the resume by running `make clean` and `make html` commands, handling dependencies, and even committing and pushing changes if needed.
+### Build Automation
 
-I’ve included example PDFs and images to showcase different page styles — from full headers with highlight bars to empty pages — so you can see the flexibility in action.
+The `python-build.py` script encapsulates the build pipeline. It includes classes for managing dependencies and executing build steps:
 
-## Interesting Details
+- `dependency_pipeline` installs Python dependencies from a `requirements.txt` file.
+- `build_pipeline` runs `make clean` and `make html` commands, commits changes, and pushes updates.
 
-- The class supports an option to toggle between single-sided documents (highlight bar always on the left) and double-sided documents (highlight bar alternates sides). This subtle feature adds polish for printed resumes.
-- The build script is a neat little Python automation that runs shell commands and manages dependencies, making it easy to update and rebuild the resume with a single command.
-- I borrowed some ideas and code snippets from popular templates but rewrote everything to fit my personal workflow and preferences.
+The script uses Python's `subprocess` module to invoke shell commands and captures their output for logging.
 
-## Why this project matters for my career
+### Project Files
 
-Creating **my-resume** was more than just making a document — it was about mastering LaTeX and automation to present myself professionally. It pushed me to deepen my understanding of document preparation systems, scripting, and build pipelines. Plus, having a polished, customizable resume template means I can quickly tailor my CV for different job applications without starting from scratch each time.
+- `resume.tex` is the main LaTeX source file that likely imports the custom class and content sections.
+- The `sections` directory presumably holds modular content pieces to keep the resume organized.
+- Image files (`head_shot.jpeg`, `picture.jpg`) are included for personal branding.
+- Output files (`resume.pdf`, `.log`, `.aux`, `.out`) are generated by LaTeX.
 
-This project reflects my commitment to quality and attention to detail, qualities I bring to all my software development work. It’s a tangible example of my ability to combine creativity with technical skills — something that definitely matters in my career journey.
+### Makefile (Inferred)
 
----
+The build script calls `make clean` and `make html`. While the Makefile is not shown, it likely defines targets to clean auxiliary files and compile the resume PDF or HTML version.
 
-Thanks for reading! If you’re interested, check out the repo and feel free to reach out with questions or suggestions.
+## Implementation Details
+
+- The LaTeX class uses boolean options to toggle layout modes, leveraging `ifthen` for conditional logic.
+- TikZ and tcolorbox packages enable graphical enhancements, such as highlight bars and framed sections.
+- The build script's modular design suggests extensibility for additional build steps or deployment actions.
+- Dependency management via pip ensures required Python packages are installed before building.
+
+## Practical Considerations
+
+This setup is well-suited for developers comfortable with LaTeX and command-line tools who want reproducible resume builds. The separation of style (class file) and content (sections) facilitates maintenance and customization. Automation reduces manual errors and streamlines updates.
+
+## Summary
+
+The apex-resume project exemplifies a pragmatic approach to resume generation using LaTeX and automation. It balances customization with reproducibility, leveraging standard tools and scripting to create a maintainable workflow. Future enhancements could improve usability and integration with continuous deployment systems.
