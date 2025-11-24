@@ -21,6 +21,13 @@ seoSecondaryKeywords:
   - build automation
   - python build script
 seoOptimized: true
+topicFamily: latex
+topicFamilyConfidence: 0.95
+topicFamilyNotes: >-
+  The post centers on a LaTeX-based resume generator using a custom document class and includes
+  build automation. The topic family's description and example slugs specifically reference LaTeX
+  resumes, cover letters, and build automation, matching the content closely. Although automation
+  aspects are present, the core subject is LaTeX resume generation.
 ---
 
 # Technical Overview of apex-resume
@@ -71,3 +78,4 @@ This setup is well-suited for developers comfortable with LaTeX and command-line
 ## Summary
 
 The apex-resume project exemplifies a pragmatic approach to resume generation using LaTeX and automation. It balances customization with reproducibility, leveraging standard tools and scripting to create a maintainable workflow. Future enhancements could improve usability and integration with continuous deployment systems.
+
