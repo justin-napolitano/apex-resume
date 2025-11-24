@@ -1,12 +1,27 @@
 ---
-slug: "github-apex-resume"
-title: "apex-resume"
-repo: "justin-napolitano/apex-resume"
-githubUrl: "https://github.com/justin-napolitano/apex-resume"
-generatedAt: "2025-11-23T08:36:15.782326Z"
-source: "github-auto"
+slug: github-apex-resume
+title: 'apex-resume: LaTeX Resume Generator with Custom Class and Automation'
+repo: justin-napolitano/apex-resume
+githubUrl: https://github.com/justin-napolitano/apex-resume
+generatedAt: '2025-11-23T08:36:15.782326Z'
+source: github-auto
+summary: >-
+  Technical overview of apex-resume, a LaTeX-based resume generator using a custom class and Python
+  automation for reproducible builds.
+tags:
+  - latex
+  - resume-generator
+  - build-automation
+  - python-scripting
+  - makefile
+  - custom-class
+seoPrimaryKeyword: latex resume generator
+seoSecondaryKeywords:
+  - custom latex class
+  - build automation
+  - python build script
+seoOptimized: true
 ---
-
 
 # Technical Overview of apex-resume
 
