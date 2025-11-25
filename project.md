@@ -1,14 +1,14 @@
 ---
 slug: github-apex-resume
 id: github-apex-resume
-title: Automated LaTeX Resume Builder with Python and Makefile
+title: Automated LaTeX Resume Builder with Python and Make
 repo: justin-napolitano/apex-resume
 githubUrl: https://github.com/justin-napolitano/apex-resume
 generatedAt: '2025-11-24T21:33:57.765Z'
 source: github-auto
 summary: >-
-  Create a professional PDF resume using a custom LaTeX class and automated
-  build scripts with Python and Make.
+  A guide to building a professional resume using LaTeX, Python scripts, and
+  Makefile for automation.
 tags:
   - latex
   - python
@@ -19,11 +19,11 @@ tags:
   - fontawesome
 seoPrimaryKeyword: latex resume automation
 seoSecondaryKeywords:
-  - build pdf resume
+  - build resume with python
+  - makefile resume builder
   - custom latex class
-  - python build script
-  - resume templates
-  - makefile automation
+  - automated resume generation
+  - resume pdf generation
 seoOptimized: true
 topicFamily: null
 topicFamilyConfidence: null
