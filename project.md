@@ -7,8 +7,8 @@ githubUrl: https://github.com/justin-napolitano/apex-resume
 generatedAt: '2025-11-24T21:33:57.765Z'
 source: github-auto
 summary: >-
-  A guide to building a professional resume using LaTeX, Python scripts, and
-  Makefile for automation.
+  A guide to building a professional resume using LaTeX, Python scripts, and Makefile for
+  automation.
 tags:
   - latex
   - python
@@ -25,8 +25,8 @@ seoSecondaryKeywords:
   - automated resume generation
   - resume pdf generation
 seoOptimized: true
-topicFamily: null
-topicFamilyConfidence: null
+topicFamily: latex
+topicFamilyConfidence: 0.9
 kind: project
 entryLayout: project
 showInProjects: true
@@ -121,3 +121,4 @@ python3 python-build.py
 ---
 
 *Note: Some assumptions were made regarding the purpose of folders and build commands due to limited documentation.*
+
